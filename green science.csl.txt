@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Green Science PJCT (Sciendo)</title>
+    <id>http://www.zotero.org/styles/green-science-pjct</id>
+    <author>
+      <name>OpenAI Assistant</name>
+    </author>
+    <category citation-format="numeric" />
+    <updated>2025-07-01T00:00:00+00:00</updated>
+    <summary>Referencia estilo PJCT (Green Science, Sciendo) con superíndice en el texto</summary>
+  </info>
+
+  <citation collapse="citation-number">
+    <layout>
+      <text variable="citation-number" form="superscript"/>
+    </layout>
+  </citation>
+
+  <bibliography et-al-use-first="1" et-al-min="3" second-field-align="flush">
+    <layout suffix=".">
+      <text variable="citation-number" suffix=" "/>
+      <names variable="author">
+        <name initialize-with="." delimiter=", " and="text"/>
+      </names>
+      <text variable="title" suffix=". "/>
+      <text variable="container-title" font-style="italic"/>
+      <group delimiter=", ">
+        <text variable="issued" form="year"/>
+        <text variable="volume"/>
+        <text variable="issue" prefix="(" suffix=")"/>
+        <text variable="page"/>
+      </group>
+      <text variable="DOI" prefix=". https://doi.org/"/>
+    </layout>
+  </bibliography>
+</style>
